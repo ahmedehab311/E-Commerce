@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // pages
 import Home from "@pages/Home";
-import Categories from "@pages/categories";
+import Categories from "@pages/Categories";
 import Prodects from "@pages/prodects";
 import AboutUs from "@pages/AboutUs";
 import Login from "@pages/login";
@@ -22,7 +22,7 @@ function appRouter() {
         },
 
         {
-          path: "category",
+          path: "Categories",
           element: <Categories />,
         },
 
@@ -35,7 +35,7 @@ function appRouter() {
               !/^[a-z]+/i.test(params.perfix)
             ) {
               throw new Response("bad request", {
-                statusText: "category no",
+                statusText: "category Not Found",
                 status: 400,
               });
             }
