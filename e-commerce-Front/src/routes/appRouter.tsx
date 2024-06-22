@@ -27,7 +27,7 @@ function appRouter() {
         },
 
         {
-          path: "Prodects/:perfix",
+          path: "categories/Prodects/:perfix",
           element: <Prodects />,
           loader: ({ params }) => {
             if (

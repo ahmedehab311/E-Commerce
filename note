@@ -1,2 +1,8 @@
 vid 3 min 22 
 >> e commerce 
+
+
+git status
+git add .
+git commit -m "Updated project"
+git push
